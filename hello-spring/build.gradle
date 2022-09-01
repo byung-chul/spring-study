@@ -13,6 +13,7 @@ repositories {
 }
 
 dependencies {
+	// gradle 에서는 implementation 시에 dependency 가 있는 라이브러리들을 다 받아온다.
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
