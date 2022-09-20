@@ -3,3 +3,6 @@
 
 #zip file
 *.zip
+
+#intelliJ setting
+.idea/
