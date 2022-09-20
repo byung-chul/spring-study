@@ -2,7 +2,6 @@ package hash.hellospring.service;
 
 import hash.hellospring.domain.Member;
 import hash.hellospring.repository.MemberRepository;
-import hash.hellospring.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -27,6 +26,7 @@ public class MemberService {
 
     /**
      * 전체 회원 조회
+     *
      * @return 전체 회원의 List를 반환함
      */
     public List<Member> findMemebers() {
@@ -35,6 +35,7 @@ public class MemberService {
 
     /**
      * id를 기준으로 특정 회원이 있나 조회하는 함수 (하나만 조회)
+     *
      * @param id 조회할 회원의 id
      * @return 조회한 회원을 Optinal하게 return
      */
@@ -44,6 +45,7 @@ public class MemberService {
 
     /**
      * 회원가입 중복에 대한 처리 ( name을 기준으로 함 )
+     *
      * @param member 가입하려는 회원
      */
     private void validateDuplicateMember(Member member) {
